@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
@@ -25,6 +25,10 @@ function App() {
   function handleClick() {
     setIsDark(!isDark);
   }
+  useEffect(() => {
+    console.log(`Search Term: ${searchTerm}`);
+    console.log(`Filtered Items Count: ${filteredItems.length}`);
+  }, [searchTerm, filteredItems]);
   return (
     <div
       className={
