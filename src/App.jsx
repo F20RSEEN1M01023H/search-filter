@@ -56,7 +56,7 @@ function App() {
         {filteredItems.length > 0 ? (
           <ul className="mt-5">
             {filteredItems.map((item, index) => (
-              <li className="border-2 mx-8 rounded-lg my-2" key={index}>
+              <li className="border-2 rounded-lg my-2 p-2" key={index}>
                 <span>{item.name}</span>
                 <span>{item.color}</span>
               </li>
